@@ -18,10 +18,12 @@
  var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
 // user makes choice 
-document.onkeyup = function() {
-    var usersGuess = event.key
+document.onkeydown = function(keyboardEntry) {
+    var userGuess = keyboardEntry.key;
     console.log(userGuess);
-}
+
+
+
  // determines the outcome
  if ((userGuess === computerGuess)) {
      win++;
