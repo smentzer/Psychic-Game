@@ -21,7 +21,7 @@
 document.onkeydown = function(keyboardEntry) {
     var userGuess = keyboardEntry.key;
     console.log(userGuess);
-
+}
 
 
  // determines the outcome
@@ -32,4 +32,4 @@ else {
     losses++
 }
 
-// functions do something 
+//functions do something. please. 
