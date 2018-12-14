@@ -1,6 +1,13 @@
+* {
+    text-align: center;
+}
+.container {
+    margin-top: 30px;
+}
 
 h1 {
     font-family: 'Bungee', cursive;
+    margin-top: 20px;
 }
     
 
@@ -8,6 +15,6 @@ h2 {
     font-family: 'Shadows Into Light', cursive;
 }
 
-h3 {
+h4 {
     font-family: 'Dancing Script', cursive;
 }

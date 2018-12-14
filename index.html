@@ -6,36 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Psychic Game</title>
-    <link rel="stylesheet" type="text/css" href="/assests/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assests/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Bungee|Dancing+Script|Shadows+Into+Light" rel="stylesheet">
 
 </head>
 
 <body>
-    <div class="row">
-        <div class="col md 12">
-            <h1>The Psychic Game</h1>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col md 12">
+                    <h1 class="display-4">Do You Want to Play a Game??</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col md 12">
+                    <h2 class ="lead">Guess what letter I'm thinking of</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col md 12">
+                    <h4 class="my-4">(Any letter, a-z)</h4>
+                </div>
+            </div>
+
+            <div class="scoreBoard">
+                <p class="wins">Total Wins: </p>
+                <p class="losses">Total Losses: </p>
+                <p class="guessesLeft">Guesses Left: </p>
+                <p class="lettersGuessed">Your Guesses so far: </p>
+            </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col md 12">
-            <h2>Guess what letter I'm thinking of</h2>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col md 12">
-            <h3>(Any letter, a-z)</h3>
-        </div>
-    </div>
-
-    <div class="scoreBoard">
-        <p>Total Wins: </p>
-        <p>Total Losses: </p>
-        <p>Guesses Left: </p>
-        <p>Your Guesses so far: </p>
-    </div>
 
 
 
@@ -48,7 +52,8 @@
 
 
 
-    <script type="text/javascript" src="/assests/javascript/game.js"></script>
+
+    <script type="text/javascript" src="assests/javascript/game.js"></script>
 </body>
 
 </html>
