@@ -21,14 +21,15 @@ console.log("computer guess: " + computerGuess);
 
 // user makes choice 
 document.onkeyup = function(event) {
-    var userGuess = event.key.toLowerCase();
+    var userGuess = event.key.toLowerCase(); //added for human error
     console.log("user guess: " + userGuess);
-    if (!computerChoices.includes(userGuess)) {
+    if (!computerChoices.includes(userGuess)) { //added for human error
         alert("Press a valid key")
        return;    
     } 
 
 // determines the outcome
+//win
 if (userGuess === computerGuess) {
     wins++;
      computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
@@ -36,13 +37,15 @@ console.log("computer guess: " + computerGuess);
     guessesSoFar = [];
     alert("you did it, play again?")
 }
-else if (userGuess !== computerGuess) {
+//keep trying
+else if (userGuess !== computerGuess) { //added for human error
     // alert("Try Again");
     guessesLeft--;
     console.log("Guess left: " + guessesLeft);
     guessesSoFar.push(" " + userGuess);
     
 }
+//you lose
 if (guessesLeft <= 0) {
     losses++;
     guessesLeft = startingGuesses;
@@ -55,7 +58,7 @@ console.log("computer guess: " + computerGuess);
 
 
 
-
+//for html
 document.getElementById("wins-text").innerHTML = "Wins: " + wins;
 document.getElementById("losses-text").innerHTML = "Losses: " + losses;
 document.getElementById("guessesLeft-text").innerHTML = "Guesses Left: " + guessesLeft;
